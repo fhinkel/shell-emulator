@@ -1,0 +1,32 @@
+{
+  "name": "shell-emulator",
+  "version": "1.0.0",
+  "description": "Emulate a shell in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fhinkel/shell-emulator.git"
+  },
+  "contributors": [
+    {
+      "name": "Franziska Hinkelmann",
+      "email": "franziska.hinkelmann@gmail.com"
+    },
+    {
+      "name": "Lars Kastner",
+      "email": "kastner@math.fu-berlin.de"
+    },
+    {
+      "name": "Mike Stillman",
+      "email": "mikestillman1@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fhinkel/shell-emulator/issues"
+  },
+  "homepage": "https://github.com/fhinkel/shell-emulator#readme"
+}
