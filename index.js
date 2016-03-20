@@ -27,7 +27,7 @@ exports.create = function (shellArea, historyArea, shellFunctions) {
 
     var setCaretPosition = shellFunctions['setCaretPosition'];
     var postMessage = shellFunctions['postMessage'];
-    var scrollDown = shellFunctions['scrollDown'];
+    var scrollDown = require('scroll-down').now;
     var interrupt = shellFunctions['interrupt'];
 
     var mathProgramOutput = "";
