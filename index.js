@@ -3,9 +3,7 @@
 
 // historyArea is a div in which we save the command for future use
 // shell functions for 
-// * setCaretPosition
 // * postMessage 
-// * scrollDown
 // * interrupt
 
 exports.create = function (shellArea, historyArea, shellFunctions) {
@@ -25,10 +23,11 @@ exports.create = function (shellArea, historyArea, shellFunctions) {
 
     var unicodeBell = '\u0007';
 
-    var setCaretPosition = shellFunctions['setCaretPosition'];
     var postMessage = shellFunctions['postMessage'];
-    var scrollDown = require('scroll-down');
     var interrupt = shellFunctions['interrupt'];
+    
+    var setCaretPosition = require('set-caret-position');
+    var scrollDown = require('scroll-down');
 
     var mathProgramOutput = "";
     var shell = shellArea;
