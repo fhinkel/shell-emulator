@@ -6,7 +6,7 @@
 // * postMessage 
 // * interrupt
 
-exports.create = function (shellArea, historyArea, shellFunctions) {
+exports.create = function (shell, historyArea, shellFunctions) {
     var keys = {
         // The keys 37, 38, 39 and 40 are the arrow keys.
         arrowUp: 38,
@@ -30,7 +30,6 @@ exports.create = function (shellArea, historyArea, shellFunctions) {
     var scrollDown = require('scroll-down');
 
     var mathProgramOutput = "";
-    var shell = shellArea;
     var history = historyArea;
     var cmdHistory = []; // History of commands for shell-like arrow navigation
     cmdHistory.index = 0;
