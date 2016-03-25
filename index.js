@@ -80,7 +80,7 @@ exports.create = function (shell, historyArea, shellFunctions) {
     });
 
     var packageAndSendMessage = function (tail, notrack) {
-        setCaretPosition(shell, shell.val().length);
+        setCaretPosition(shell.attr('id'), shell.val().length);
         if (shell.val().length >= mathProgramOutput.length) {
             l = shell.val().length;
             msg = shell.val().substring(mathProgramOutput.length, l) + tail;
@@ -122,7 +122,7 @@ exports.create = function (shell, historyArea, shellFunctions) {
     // If something is entered, change to end of textarea, if at wrong position.
     shell.keydown(function (e) {
         if (e.keyCode == keys.enter) {
-            setCaretPosition(shell, shell.val().length);
+            setCaretPosition(shell.attr('id'), shell.val().length);
         }
 
         if ((e.keyCode == keys.arrowUp) || (e.keyCode == keys.arrowDown)) {
@@ -141,7 +141,7 @@ exports.create = function (shell, historyArea, shellFunctions) {
         }
         var pos = shell[0].selectionStart;
         if (pos < mathProgramOutput.length) {
-            setCaretPosition(shell, shell.val().length);
+            setCaretPosition(shell.attr('id'), shell.val().length);
         }
         // This deals with backspace.
         // We may not shorten the string entered by M2.
